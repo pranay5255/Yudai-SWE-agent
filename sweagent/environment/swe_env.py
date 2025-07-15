@@ -186,7 +186,7 @@ class SWEEnv:
                 CreateBashSessionRequest(startup_source=["/root/.bashrc"], startup_timeout=10)
             )
         )
-        self.set_env_variables({"LANG": "C.UTF-8", "LC_ALL": "C.UTF-8"})
+        self.set_env_variables({"LANG": "C.UTF-8", "LC_ALL": "C.UTF-8", "PIP_PROGRESS_BAR": "off", "PAGER": "cat"})
         self.logger.info("Environment Initialized")
 
     def interrupt_session(self):

@@ -812,6 +812,7 @@ class LiteLLMModel(AbstractModel):
                     ContentPolicyViolationError,
                     ModelConfigurationError,
                     KeyboardInterrupt,
+                    IndexError,
                 )
             ),
             before_sleep=retry_warning,
